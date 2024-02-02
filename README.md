@@ -1,8 +1,8 @@
 # EcommerceApp
-# Step1: Clone the project on your editor
-# Step2: Activate virtualenv : virtualenv\Scripts\activate
-# Step3: Navigate to main(parent) directory and run uvicorn mainController:app --reload
-# Step4: Run apis:
+Step1: Clone the project on your editor
+Step2: Activate virtualenv : virtualenv\Scripts\activate
+Step3: Navigate to main(parent) directory and run uvicorn mainController:app --reload
+Step4: Run apis:
 Go to https://127.0.0.1:8000/docs:
 2 APIS,
 1. product_listing, args = [max_price, min_price, offset, limit]
