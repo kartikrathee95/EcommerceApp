@@ -17,15 +17,13 @@ db = client['database_ecommerce']
 @app.get("/products")
 def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max_price: Optional[int] =  None):
 
-    products = db['produc']
-
     #db_write
     with open('product_inventory.json') as file:
         file_data = json.load(file)
     if isinstance(file_data, list):
-        products.insert_many(file_data)  
+        db['products'].insert_many(file_data)  
     else:
-        products.insert_one(file_data)
+        db['products'].insert_one(file_data)
     
     query = []
     # subquery to apply price filters
