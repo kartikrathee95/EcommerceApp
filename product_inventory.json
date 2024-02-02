@@ -1,0 +1,67 @@
+[
+    {
+      "name": "iPhone16",
+      "price": 100000,
+      "available_units": 100
+    },
+    {
+      "name": "IFB Washing Machine",
+      "price": 30000,
+      "available_units": 50
+    },
+    {
+      "name": "Rolex Watch",
+      "price": 1000000,
+      "available_units": 15
+    },
+    {
+      "name": "Lenovo Ideapad 5",
+      "price": 80000,
+      "available_units": 75
+    },
+    {
+      "name": "Sony Smart LED TV",
+      "price": 100000,
+      "available_units": 12
+    },
+    {
+      "name": "Godrej DishWasher",
+      "price": 100000,
+      "available_units": 5
+    },
+    {
+      "name": "MacBook Pro",
+      "price": 100000,
+      "available_units": 30
+    },
+    {
+      "name": "LG Smart Refrigerator",
+      "price": 80000,
+      "available_units": 20
+    },
+    {
+      "name": "JBL Headphones",
+      "price": 20000,
+      "available_units": 100
+    },
+    {
+      "name": "AirPods Pro Max",
+      "price": 50000,
+      "available_units": 30
+    },
+    {
+      "name": "Smart Keyboard",
+      "price": 10000,
+      "available_units": 100
+    },
+    {
+      "name": "Digital Mouse",
+      "price": 8000,
+      "available_units": 80
+    },
+    {
+      "name": "iPad Pro",
+      "price": 20000,
+      "available_units": 100
+    }
+  ]
