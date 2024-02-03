@@ -39,10 +39,7 @@ def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max
     Query(query_type="pagination", superQuery= query,offset= offset, limit= limit)
 
     out = list(db['products'].aggregate(query))
-
-    if len(out)>0 and len(out[0]['page'])>0:
-        out[0]['page'][0]['limit'] = limit
-        
+    
     return json.loads(json_util.dumps(out))
 
 
