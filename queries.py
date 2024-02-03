@@ -32,6 +32,5 @@ class PaginationQuery(Query):
         superQuery.append({ 
         "$facet": {
         "data": [{"$skip": offset},{"$limit": limit},{"$project": {"id": "$_id","_id": 0,"name": "$name","price": "$price","quantity": "$available_qty"}}],
-        "page": [{"$skip": offset},{"$limit": limit},{"$count": "count" },{"$project": {"limit":"$limit","total": "$count","nextOffset": {"$cond": [{"$lt": ["$count", limit]}, None, {"$add": [offset, limit]}] },
-        "prevOffset": { "$cond": [{"$lte": [offset, 0]},None,{"$subtract": [offset, limit]}]}}} ]}})
+        "page": [{"$skip": offset},{"$limit": limit},{"$count": "count" },{"$project": {"limit":"$count","total": "$count","nextOffset": {"$cond": [{"$lt": ["$count", limit]}, None, {"$add": [offset, limit]}]}}}]}})
         
