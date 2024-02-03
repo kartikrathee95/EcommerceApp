@@ -14,7 +14,7 @@ app = FastAPI()
 client = MongoClient("mongodb://127.0.0.1:27017/database_ecommerce")
 db = client['database_ecommerce']
 
-@app.get("/products")
+@app.get("/product_list")
 def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max_price: Optional[int] =  None):
 
     #db_write
@@ -44,7 +44,7 @@ def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max
 
 
 # API to create an order
-@app.post("/orders")
+@app.post("/create_order")
 def create_order(order_input: Order.RequestOrder):
 
     order_created = Order.Order(
