@@ -1,67 +1,242 @@
 [
-    {
-      "name": "iPhone16",
-      "price": 100000,
-      "available_units": 100
-    },
-    {
-      "name": "IFB Washing Machine",
-      "price": 30000,
-      "available_units": 50
-    },
-    {
-      "name": "Rolex Watch",
-      "price": 1000000,
-      "available_units": 15
-    },
-    {
-      "name": "Lenovo Ideapad 5",
-      "price": 80000,
-      "available_units": 75
-    },
-    {
-      "name": "Sony Smart LED TV",
-      "price": 100000,
-      "available_units": 12
-    },
-    {
-      "name": "Godrej DishWasher",
-      "price": 100000,
-      "available_units": 5
-    },
-    {
-      "name": "MacBook Pro",
-      "price": 100000,
-      "available_units": 30
-    },
-    {
-      "name": "LG Smart Refrigerator",
-      "price": 80000,
-      "available_units": 20
-    },
-    {
-      "name": "JBL Headphones",
-      "price": 20000,
-      "available_units": 100
-    },
-    {
-      "name": "AirPods Pro Max",
-      "price": 50000,
-      "available_units": 30
-    },
-    {
-      "name": "Smart Keyboard",
-      "price": 10000,
-      "available_units": 100
-    },
-    {
-      "name": "Digital Mouse",
-      "price": 8000,
-      "available_units": 80
-    },
-    {
-      "name": "iPad Pro",
-      "price": 20000,
-      "available_units": 100
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 60000,
+    "available_units": 50,
+    "category": "Electronics",
+    "seller": "TechStore"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "price": 40000,
+    "available_units": 100,
+    "category": "Electronics",
+    "seller": "MobileZone"
+  },
+  {
+    "id": 3,
+    "name": "Coffee Maker",
+    "price": 3000,
+    "available_units": 25,
+    "category": "Appliances",
+    "seller": "HomeApplianceHub"
+  },
+  {
+    "id": 4,
+    "name": "Running Shoes",
+    "price": 2500,
+    "available_units": 75,
+    "category": "Sports",
+    "seller": "SportsEmporium"
+  },
+  {
+    "id": 5,
+    "name": "Desk Chair",
+    "price": 8000,
+    "available_units": 30,
+    "category": "Furniture",
+    "seller": "FurnitureWorld"
+  },
+  {
+    "id": 6,
+    "name": "Digital Camera",
+    "price": 35000,
+    "available_units": 20,
+    "category": "Electronics",
+    "seller": "CameraParadise"
+  },
+  {
+    "id": 7,
+    "name": "Backpack",
+    "price": 1500,
+    "available_units": 40,
+    "category": "Fashion",
+    "seller": "StyleBoutique"
+  },
+  {
+    "id": 8,
+    "name": "Gaming Console",
+    "price": 30000,
+    "available_units": 15,
+    "category": "Electronics",
+    "seller": "GameHaven"
+  },
+  {
+    "id": 9,
+    "name": "Blender",
+    "price": 5000,
+    "available_units": 35,
+    "category": "Appliances",
+    "seller": "KitchenEssentials"
+  },
+  {
+    "id": 10,
+    "name": "Dumbbells",
+    "price": 1500,
+    "available_units": 50,
+    "category": "Sports",
+    "seller": "FitGearCo"
+  },
+  {
+    "id": 11,
+    "name": "Office Desk",
+    "price": 10000,
+    "available_units": 10,
+    "category": "Furniture",
+    "seller": "OfficeFurnishings"
+  },
+  {
+    "id": 12,
+    "name": "Headphones",
+    "price": 3000,
+    "available_units": 60,
+    "category": "Electronics",
+    "seller": "AudioTech"
+  },
+  {
+    "id": 13,
+    "name": "Toaster",
+    "price": 1500,
+    "available_units": 30,
+    "category": "Appliances",
+    "seller": "KitchenAppliancesCo"
+  },
+  {
+    "id": 14,
+    "name": "Tennis Racket",
+    "price": 2000,
+    "available_units": 25,
+    "category": "Sports",
+    "seller": "SportingGoodsHub"
+  },
+  {
+    "id": 15,
+    "name": "Sofa",
+    "price": 25000,
+    "available_units": 20,
+    "category": "Furniture",
+    "seller": "ComfortLiving"
+  },
+  {
+    "id": 16,
+    "name": "Smartwatch",
+    "price": 12000,
+    "available_units": 50,
+    "category": "Electronics",
+    "seller": "TechWearables"
+  },
+  {
+    "id": 17,
+    "name": "Microwave Oven",
+    "price": 8000,
+    "available_units": 15,
+    "category": "Appliances",
+    "seller": "KitchenAppliancesCo"
+  },
+  {
+    "id": 18,
+    "name": "Yoga Mat",
+    "price": 800,
+    "available_units": 40,
+    "category": "Sports",
+    "seller": "FitnessGearHub"
+  },
+  {
+    "id": 19,
+    "name": "Bookshelf",
+    "price": 6000,
+    "available_units": 10,
+    "category": "Furniture",
+    "seller": "BookNookFurniture"
+  },
+  {
+    "id": 20,
+    "name": "Wireless Mouse",
+    "price": 800,
+    "available_units": 25,
+    "category": "Electronics",
+    "seller": "TechAccessoriesStore"
+  },
+  {
+    "id": 21,
+    "name": "Juicer",
+    "price": 3000,
+    "available_units": 20,
+    "category": "Appliances",
+    "seller": "KitchenEssentials"
+  },
+  {
+    "id": 22,
+    "name": "Sneakers",
+    "price": 4000,
+    "available_units": 30,
+    "category": "Fashion",
+    "seller": "AthleticFootwearCo"
+  },
+  {
+    "id": 23,
+    "name": "Bicycle",
+    "price": 15000,
+    "available_units": 5,
+    "category": "Sports",
+    "seller": "BikeWorld"
+  },
+  {
+    "id": 24,
+    "name": "Coffee Table",
+    "price": 12000,
+    "available_units": 15,
+    "category": "Furniture",
+    "seller": "LivingRoomFurnishings"
+  },
+  {
+    "id": 25,
+    "name": "External Hard Drive",
+    "price": 5000,
+    "available_units": 40,
+    "category": "Electronics",
+    "seller": "TechStorageSolutions"
+  },
+  {
+    "id": 26,
+    "name": "Air Fryer",
+    "price": 7000,
+    "available_units": 25,
+    "category": "Appliances",
+    "seller": "KitchenAppliancesCo"
+  },
+  {
+    "id": 27,
+    "name": "Hiking Boots",
+    "price": 4500,
+    "available_units": 20,
+    "category": "Fashion",
+    "seller": "OutdoorGearEmporium"
+  },
+  {
+    "id": 28,
+    "name": "Treadmill",
+    "price": 25000,
+    "available_units": 10,
+    "category": "Sports",
+    "seller": "FitGearCo"
+  },
+  {
+    "id": 29,
+    "name": "Dining Table",
+    "price": 18000,
+    "available_units": 15,
+    "category": "Furniture",
+    "seller": "DiningFurnitureCo"
+  },
+  {
+    "id": 30,
+    "name": "Printer",
+    "price": 6000,
+    "available_units": 30,
+    "category": "Electronics",
+    "seller": "TechOfficeSupplies"
+  }
+]
