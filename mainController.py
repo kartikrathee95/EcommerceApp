@@ -20,6 +20,10 @@ def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max
     #db_write
     with open('product_inventory.json') as file:
         file_data = json.load(file)
+    keys = ["name","price","available_units"]
+    old_data = file_data[0]
+    file_data[0] = {key: old_data[key] for key in keys}
+    
     if isinstance(file_data, list):
         db['products'].insert_many(file_data)  
     else:
