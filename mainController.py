@@ -25,9 +25,9 @@ def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max
     file_data[0] = {key: old_data[key] for key in keys}
     
     if isinstance(file_data, list):
-        db['products'].insert_many(file_data)  
+        db['product_container'].insert_many(file_data)  
     else:
-        db['products'].insert_one(file_data)
+        db['produc_container'].insert_one(file_data)
     
     query = []
     # subquery to apply price filters
@@ -38,12 +38,12 @@ def fetch_products(offset:int , limit:int , min_price: Optional[int] = None, max
     
     Query(query_type="pagination", superQuery= query,offset= offset, limit= limit)
 
-    out = list(db['products'].aggregate(query))
+    out = list(db['product_container'].aggregate(query))
     
     return json.loads(json_util.dumps(out))
 
 
-# API to create an order
+# Post request for accomodating large order data
 @app.post("/create_order")
 def create_order(order_input: Order.RequestOrder):
 
@@ -54,6 +54,6 @@ def create_order(order_input: Order.RequestOrder):
     )
 
     # DB write
-    db['order'].insert_one(order_created.dict())
+    db['order_container'].insert_one(order_created.dict())
 
     return order_created
